@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato&family=Permanent+Marker&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://www.googleoptimize.com/optimize.js?id=OPT-T5TBLXH"></script>
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-KZ3MSJJ");
+		</script>
+		<!-- End Google Tag Manager -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>GENEVIEVE CARTER</title>
+		<style>
+			html,
+			body {
+				font-family: "Lato", sans-serif;
+				height: 100%;
+				margin: 0;
+				width: 100%;
+			}
+
+			h1 {
+				font-size: 30px;
+			}
+
+			.container {
+				align-items: center;
+				display: flex;
+				height: 100%;
+				justify-content: center;
+				width: 100%;
+			}
+
+			.donation-component {
+				background: #e9e6ff;
+				border-radius: 15px;
+				box-shadow: 6px 6px 2px 1px rgba(24, 24, 77, 0.1);
+				color: #000000;
+				text-align: center;
+				width: 320px;
+			}
+
+			.donation-component p {
+				margin-top: 0px;
+			}
+
+			.donation-component__content-container {
+				align-items: center;
+				display: flex;
+				flex-flow: column-reverse;
+				margin: 25px 0;
+				padding: 15px;
+			}
+
+			.donation-component__button {
+				background: #439775;
+				border-color: #439775;
+				border-radius: 0 0 15px 15px;
+				color: #ffffff;
+				font-family: "Permanent Marker", cursive;
+				font-size: 18px;
+				text-align: center;
+				text-transform: uppercase;
+				transition: background-color 0.1s;
+				width: 100%;
+			}
+
+			.donation-component__button:hover {
+				background-color: #48bf84;
+				border-color: #48bf84;
+			}
+
+			img {
+				border-radius: 50%;
+				height: 100px;
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="donation-component">
+				<div class="donation-component__content">
+					<div class="donation-component__content-container">
+						<img alt="" src="" id="placeholder" />
+						<p>
+							Have you been searching for a cupcake recipe that will take your
+							career to the next level and make your dreams come true?
+							<br /><br />
+							This cupcake recipe does none of those things, but gosh it makes
+							some pretty tasty cupcakes.
+						</p>
+					</div>
+				</div>
+				<button class="donation-component__button" href="#">
+					<h2>Buy now</h2>
+				</button>
+			</div>
+		</div>
+		<script>
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+
+			function setExperiment(value, name) {
+				if (value == "1") {
+					window.experimentVariant = "A";
+					document.getElementById("placeholder").src = "./cupcake-red.png";
+					document.getElementById("placeholder").alt = "A red cupcake";
+				} else if (value == "2") {
+					window.experimentVariant = "B";
+					document.getElementById("placeholder").src = "./cupcake-blue.png";
+					document.getElementById("placeholder").alt = "A blue cupcake";
+				} else {
+					window.experimentVariant = undefined;
+					console.log("ERROR: No variant set");
+				}
+			}
+
+			gtag("event", "optimize.callback", {
+				name: "zYy-8_rjRgOLvDU8WMVEYA",
+				callback: setExperiment,
+			});
+		</script>
+	</body>
+</html>
